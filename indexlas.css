@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+.headcontainer{
+    background-color: #fbf9f7;
+}
+header{
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #6d6d6d;
+    display: flex;
+    justify-content: space-between;
+}
+.separation{
+    border-bottom: 4px solid grey ;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    font-size: 20px;
+    text-decoration: none;
+}
+#titre{
+    color: #7c925e ;
+    background-color: #fbf9f7;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+#bandeau{
+    background-color: #ebe2d7;
+    color: #7c925e;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.iconehead{
+    display: flex;
+    gap: 20px;
+}
+.iconehead img{
+    width: 40px;
+    padding-bottom: 20px;
+}
+li{
+    display:flex ;
+}
+a{
+    text-decoration: none;
+    color: #6d6d6d;
+}
+.footcontainer{
+    height: 200px;
+}
+footer{
+    background-color: #ebe2d7;
+    padding: 30px 20%;
+}
+#contact{
+    color: #7c925e;
+}
+
+.form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form .form-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+.sendmessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+textarea{
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    height: 62%;
+}
+
+#envoyer{
+    color: white;
+    background-color: #7c925e;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width: 575px){   
+
+    header{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form{
+        flex-direction: column;
+    }
+    ul{
+        
+    }
+    
+}
