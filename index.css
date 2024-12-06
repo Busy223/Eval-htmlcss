@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.headcontainer{
+    background-color: #fbf9f7;
+}
+header{
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #6d6d6d;
+    display: flex;
+    justify-content: space-between;
+}
+.separation{
+    border-bottom: 4px solid grey ;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    font-size: 20px;
+    text-decoration: none;
+}
+#titre{
+    color: #7c925e ;
+    background-color: #fbf9f7;
+    margin-left: 150px;
+    padding-top: 20px;
+}
+#bandeau{
+    background-color: #ebe2d7;
+    color: #7c925e;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.iconehead{
+    display: flex;
+    gap: 20px;
+}
+.iconehead img{
+    width: 40px;
+    padding-bottom: 20px;
+}
+li{
+    display:flex ;
+    list-style-type: none;
+
+}
+
+.footcontainer{
+    height: 200px;
+}
+footer{
+    background-color: #ebe2d7;
+}
+#contact{
+    color: #7c925e;
+}
+form{
+    display: flex ;
+    justify-content: space-evenly;
+    height: 145px;
+    padding: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+    gap: 7px;
+}
+input{
+    height: 16%;
+}
+.sendmessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+textarea{
+    width: 150%;
+    height: 62%;
+}
+
+#envoyer{
+    color: white;
+    background-color: #7c925e;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 150%;
+}
+
+@media (min-width:330px) and (max-width: 575px){   
+
+    header{
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+    form{
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    a{
+        text-decoration: none;
+    }
+    footer{
+        
+        
+    }
+    #titre{
+        margin-left: 0;
+    }
+    textarea{
+        
+    } 
+    .sendmessage{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+        
+    }
+    #bandeau{
+        height:20%
+    }
+    #envoyer{
+        width: 110%;
+        height: 20px
+    }
+}
