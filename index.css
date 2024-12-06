@@ -1,122 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family:Arial, Helvetica, sans-serif
-}
-.headcontainer{
-    background-color: #fbf9f7;
-}
-header{
-    margin-left: 150px;
-    margin-right: 150px;
-    color: #6d6d6d;
-    display: flex;
-    justify-content: space-between;
-}
-.separation{
-    border-bottom: 4px solid grey ;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    gap: 20px; 
-    font-size: 20px;
-    text-decoration: none;
-}
-#titre{
-    color: #7c925e ;
-    background-color: #fbf9f7;
-    margin-left: 150px;
-    padding-top: 20px;
-}
-#bandeau{
-    background-color: #ebe2d7;
-    color: #7c925e;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-}
-.iconehead{
-    display: flex;
-    gap: 20px;
-}
-.iconehead img{
-    width: 40px;
-    padding-bottom: 20px;
-}
-li{
-    display:flex ;
-}
-a{
-    text-decoration: none;
-    color: #6d6d6d;
-}
-.footcontainer{
-    height: 200px;
-}
-footer{
-    background-color: #ebe2d7;
-    padding: 30px 20%;
-}
-#contact{
-    color: #7c925e;
-}
+.produit{
+    margin: 50px 20%;
+    display: grid;
+    grid-template-columns: 8fr 5fr 7fr;
+    font-family: Calibri;
 
-.form{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.form .form-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px
-}
-
-input{
-    padding: 10px;
-    width: 100%;
-    border: none;
-    box-sizing: border-box;
-}
-.sendmessage{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 5px;
-}
-textarea{
-    box-sizing: border-box;
-    border: none;
-    resize: none;
-    height: 62%;
-}
-
-#envoyer{
-    color: white;
-    background-color: #7c925e;
-    border: none;
-    padding: 10px;
-    width: 100%;
-}
-
-@media (max-width: 575px){   
-
-    header{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .form{
+    .listeLien{
+        padding: 20px;
+        padding-top: 0;
+        grid-column: 1;
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        li{
+            font-size: 2em;
+            color: #6d6d6d;
+            list-style-type: square;
+            margin: 20px;
+        }
     }
-    ul{
-        
+
+    .boxPhoto{
+        padding: 20px;
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .bigPhoto{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .miniPhoto{
+            display: flex;
+            justify-content: space-between;
+            
+            img{
+                margin: 20px 10px;
+            }
+        }
     }
+
+    .ficheProduit{
+        padding: 20px;
+        grid-column: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-content: space-between;
+        color: #6d6d6d;
+
+        h2:nth-child(1){
+            margin-top: 0;
+            color: #7c925e;
+        }
+
+        h2{
+            font-weight: bold;
+        }
+
+        .bouton input{
+            color: white;
+            background-color: #7c925e;
+            height: 50px;
+            width: 200px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: none;
+        }
+
+        .bouton input:hover{
+            transform: scale(1.2);
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 575px){
     
+    .produit{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 1fr;
+
+        .boxPhoto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            grid-column: 1;
+            grid-row: 1;
+
+            .bigPhoto{
+                margin: 0px 20px;
+            }
+        }
+
+        .ficheProduit{
+            margin: 0;
+            padding: 0;
+            grid-column: 1;
+            grid-row: 2;
+
+            .bouton{
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .bouton input:active{
+                transform: scale(1.2);
+            }
+        }
+
+        .listeLien{
+            margin: 0;
+            padding: 0;
+            grid-column: 1;
+            grid-row: 3;
+
+            font-size: 0.75em;
+            display: flex;
+            align-items: center;
+        }
+    }
 }
