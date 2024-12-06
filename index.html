@@ -31,22 +31,19 @@
 
 
     
-        <footer class="footcontainer">
-            <form action=".....php" method="post">
-
-                <div class="form">
+        <footer>
                 <h3 id="contact">Contactez-nous</h3>
-                <input type="text" id="nom" name="nom" placeholder="Nom" minlength="4" maxlength="20" required>
-                <input type="text" id="prenom" name="prenom" placeholder="Prénom" minlength="4" maxlength="20" required>
-                <input type="email" id="mail" name="mail" placeholder="Mail" minlength="8" required>
-                </div>
-
-                <div class="sendmessage">
-                <textarea name="message" id="message" ></textarea>
-                <input id="envoyer" type="submit" value="Envoyer">
-                </div>
-
-            </form>
+                    <form method="post" class="form">
+                    <div class="form-content">
+                        <input type="text" id="nom" name="nom" placeholder="Nom" minlength="4" maxlength="20" required>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" minlength="4" maxlength="20" required>
+                        <input type="email" id="mail" name="mail" placeholder="Mail" minlength="8" required>
+                    </div>
+                    <div class="form-content">
+                        <textarea name="message" id="message" rows="9" cols="80"></textarea>
+                        <input id="envoyer" type="submit" value="Envoyer">
+                    </div>
+                </form>
         </footer>
 </body>
 </html>
